@@ -1,0 +1,22 @@
+n = int(input("Enter the limit: "))
+
+largest = -9999999999
+
+for i in range(1, n + 1):
+    print("Enter", i, end=" ")
+    a = int(input("the number: "))
+    if a > largest:
+        largest = a
+
+print("Largest number is:", largest)
+
+#output
+
+Enter the limit: 4
+Enter 1 the number: 2
+Enter 2 the number: 67
+Enter 3 the number: 4
+Enter 4 the number: 5
+Largest number is: 67
+
+
