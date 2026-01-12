@@ -1,0 +1,19 @@
+# 73. Python program to implement linear search
+numbers = [4, 2, 7, 1, 8, 3, 6]
+f = 0  # flag
+x = int(input("Enter the number to be found: "))
+
+for i in range(len(numbers)):
+    if x == numbers[i]:
+        print("Successful search, element found at position", i)
+        f = 1
+        break
+
+if f == 0:
+    print("Oops! Search unsuccessful")
+
+"""
+Output:
+Enter the number to be found: 7
+Successful search, element found at position 2
+"""
