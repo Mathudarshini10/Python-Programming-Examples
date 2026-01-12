@@ -1,0 +1,14 @@
+# 66. Python program to display all integers 100-200 whose sum of digits is even
+for i in range(100, 200):
+    num = i
+    sum_digits = 0
+    while num != 0:
+        sum_digits += num % 10
+        num //= 10
+    if sum_digits % 2 == 0:
+        print(i, end=" ")
+
+"""
+Output (partial):
+101 103 105 107 109 110 112 114 116 ...
+"""
