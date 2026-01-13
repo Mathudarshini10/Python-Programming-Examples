@@ -1,0 +1,32 @@
+import numpy as np
+
+order = int(input("Enter order of magic square (order must be odd): "))
+
+if order % 2 == 0:
+    order += 1
+    print("Given order is even so it is incremented by 1.")
+
+magic = np.zeros((order, order), dtype=int)
+i, j = 0, order // 2
+
+for num in range(1, order * order + 1):
+    magic[i][j] = num
+    ni, nj = (i - 1) % order, (j + 1) % order
+    if magic[ni][nj]:
+        i = (i + 1) % order
+    else:
+        i, j = ni, nj
+
+print("Generated Magic Square:")
+for row in magic:
+    print(row)
+
+output
+
+Enter order of magic square (order must be odd): 5
+Generated Magic Square:
+[17 24  1  8 15]
+[23  5  7 14 16]
+[ 4  6 13 20 22]
+[10 12 19 21  3]
+[11 18 25  2  9]
