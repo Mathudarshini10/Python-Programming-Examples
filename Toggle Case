@@ -1,0 +1,11 @@
+s = input("Enter string: ")
+print("Original:", s)
+print("Toggled :", s.swapcase())
+
+Output
+
+yaml
+Copy code
+Enter string: Python PROgrams
+Original: Python PROgrams
+Toggled : pYTHON programs
