@@ -1,0 +1,13 @@
+def AP(m1, m2, m3):
+    total = m1 + m2 + m3
+    avg = total / 3
+    per = (total / 150) * 100
+    print(f"Average={avg:.2f} Percentage={per:.2f}")
+
+AP(45, 36, 47)
+
+Output
+
+ini
+Copy code
+Average=42.67 Percentage=85.33
