@@ -1,0 +1,17 @@
+with open("myfile.txt", "w") as f:
+    f.write("My first file")
+
+with open("myfile.txt", "a") as f:
+    f.write("\nWelcome Every one")
+    f.write("\nAppend Mode")
+
+with open("myfile.txt", "r") as f:
+    print(f.read())
+
+Output
+
+sql
+Copy code
+My first file
+Welcome Every one
+Append Mode
