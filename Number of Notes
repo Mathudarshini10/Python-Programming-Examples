@@ -1,0 +1,16 @@
+def no_notes(amount):
+    notes = [500, 200, 100, 50, 20, 10]
+    count = 0
+    for n in notes:
+        count += amount // n
+        amount %= n
+    return count if amount == 0 else -1
+
+print(no_notes(500))
+print(no_notes(560))
+
+Output
+
+Copy code
+1
+3
